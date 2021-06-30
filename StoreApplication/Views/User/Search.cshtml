@@ -1,0 +1,10 @@
+﻿@{
+    ViewData["Title"] = "Username Search";
+}
+
+<h3>Username List for @ViewBag.Name:</h3>
+
+@foreach (var order in Model)
+{
+    <p>@Html.Raw(order) </p>
+}

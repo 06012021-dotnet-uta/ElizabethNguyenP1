@@ -1,0 +1,12 @@
+﻿@model List<P0DbContext.Order>
+
+@{
+    ViewData["Title"] = "Index";
+}
+
+<h3>Order History Log From Location</h3>
+
+@foreach (P0DbContext.Order order in Model)
+{
+    <p>@Html.DisplayFor(modelItem => order.OrderDate) </p>
+}

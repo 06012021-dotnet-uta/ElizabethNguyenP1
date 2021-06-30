@@ -1,0 +1,45 @@
+﻿@model P0DbContext.Customer
+
+@{
+    ViewData["Title"] = "Account Creation";
+}
+
+<h3> Create New Account</h3>
+<form asp-action="PopulateAccount">
+    <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+    <div class="form-group">
+        <label asp-for="FirstName" class="control-label"></label>
+        <input asp-for="FirstName" type="text" class="form-control"  required/>
+    </div>
+    <div class="form-group">
+        <label asp-for="LastName" class="control-label"></label>
+        <input asp-for="LastName" type="text" class="form-control" required/>
+    </div>
+    <div class="form-group">
+        <label asp-for="UserEmail" class="control-label"></label>
+        <input asp-for="UserEmail" type="email" class="form-control" required/>
+        <small id="emailHelp" class="form-text text-muted">We will not spam you. I promise.</small>
+    </div>
+    <div class="form-group">
+        <label asp-for="UserName" class="control-label"></label>
+        <input asp-for="UserName" type="text" class="form-control" required/>
+    </div>
+    <div class="form-group">
+        <label asp-for="UserPassword" class="control-label"></label>
+        <input asp-for="UserPassword" type="Password" class="form-control" required/>
+    </div>
+    <div class="form-group">
+        <label asp-for="Age" class="control-label"></label>
+        <input asp-for="Age" type="number" value="0" class="form-range" min="0" max="100" step="1" />
+        <small id="emailHelp" class="form-text text-muted">We cannot sell items to minors.</small>
+    </div>
+    <div class="form-group">
+        <input asp-for="SecretUser" type="hidden" value="false" />
+    </div>
+    <div class="form-group">
+        <input asp-for="DefaultStore" type="hidden" value="1" />
+    </div>
+    <div class="form-group">
+        <input type="submit" value="Register" class="btn btn-primary" />
+    </div>
+</form>
