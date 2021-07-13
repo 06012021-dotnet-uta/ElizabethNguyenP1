@@ -1,0 +1,27 @@
+﻿@model P0DbContext.Customer
+
+@{
+    ViewData["Title"] = "BLAZED Bentos & Snacks";
+}
+
+<div class="text-center">
+    <h1 class="display-4">Welcome to Blazed Bentos & Snacks</h1>
+    <img src="~/Images/icon.png" title="Rengoku" alt="The Flame Pillar" />
+    <h3> Would you like to Login or Continue as a Guest?</h3>
+    <a asp-area="" asp-controller="User" asp-action="Login"><button type="button" class="btn btn-primary">Log In</button></a>
+    <a asp-area="" asp-controller="User" asp-action="CreateAccount"><button type="button" class="btn btn-info">Create Account</button></a>
+    <a asp-area="" asp-controller="User" asp-action="GuestEntry"><button type="button" class="btn btn-secondary">Guest User</button></a>
+    <br /><br />
+          <div class="row justify-content-center">
+              <br /><p>Look for account by First Name: </p>&nbsp;&nbsp;&nbsp;
+              <form asp-controller="User" asp-action="Search" class="form-inline">
+                  <div class="form-group">
+                      <label name="name" class="control-label"></label>
+                      <input name="name" type="text" class="form-control" required />&nbsp;&nbsp;&nbsp;
+                      <input type="submit" value="Search" class="btn btn-primary" />
+                  </div>
+              </form>
+          </div>
+
+
+</div>

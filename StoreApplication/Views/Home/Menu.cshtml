@@ -1,0 +1,39 @@
+﻿@{
+    ViewData["Title"] = "Menu";
+}
+
+<div class="text-center">
+    <h1 class="display-4">
+        @{
+            @ViewBag.StoreLocation
+        }
+        's Menu
+    </h1>
+    <!-- <p>Learn about <a href="https://docs.microsoft.com/aspnet/core">building Web apps with ASP.NET Core</a>.</p> -->
+</div>
+
+<div class="row display: flex justify-content-center" >
+    @foreach (P1.DetailedProductInventory item in Model)
+    {
+        <div class="card text-center border-dark mb-3" style="width: 18rem;">
+            <img class="card-img-top" src="@Url.Content(item.Product.ImgPath)" alt=@Html.DisplayFor(modelItem => item.Product.ProductName)>
+            <div class="card-body">
+                <h5 class="card-title">@Html.DisplayFor(modelItem => item.Product.ProductName)</h5>
+                <p class="card-text">@Html.DisplayFor(modelItem => item.Product.ProductDescription)</p>
+                <p> Price: @Html.DisplayFor(modelItem => item.Product.Price)</p>
+                <form asp-controller="Cart" asp-action="AddCart">
+                    <div class="form-group">
+                        <p>Limited Quantity: @item.Inventory</p>
+                        <label for="productAmount">Amount: </label>
+                        <input type="number" value="0" class="form-range" min="0" max="@item.Inventory" step="1" id="productAmount" name="amount" />
+                        <input type="hidden" name="productID" value="@item.Product.ProductId" />
+                    </div>
+                    <input type="submit" class="btn btn-primary" value="Add to Cart" />
+                </form>
+
+            </div>
+        </div>
+        <p>&nbsp;&nbsp;&nbsp;</p>
+
+    }
+</div>
