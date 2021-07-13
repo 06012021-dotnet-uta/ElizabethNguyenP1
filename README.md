@@ -3,10 +3,12 @@
 ## Project Description
 This is a ASP.NET Core MVC project utilizing Entity Framework Core to create a Web Store Application that allows a user to create an account then view orders by user and store location. The user can create an order, view their order history, and view the order history of a store location.
 
-## Technologies Used
+## Enviroments & Technologies Used
 
+*  C# Programming, HTML5, CSS3, SQL
 *  Microsoft SQL Server Management Studio (SSMS)
-*  Visual Studio (ASP.NET Core MVC)
+*  Visual Studio (ASP.NET Core MVC Project)
+*  ADO.NET Entity Framework
 *  GitHub
 
 ## Features
