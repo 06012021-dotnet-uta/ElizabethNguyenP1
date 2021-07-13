@@ -28,11 +28,7 @@ To-do list:
 This application is currently hosted locally and will require a local database and Visual Studio to operate. 
 
 In order to view & interact with the application, 
-
-1: Clone the repository 
-
-2: Create a database using the seed SQL file in the root folder - "P0_DB.sql"
-
-3: Edit the connection string in Visual Studio to access your local database
-
-4: Run the application locally via Visual Studio
+1. Clone the repository 
+2. Create a database using the seed SQL file in the root folder - "P0_DB.sql"
+3. Edit the connection string in Visual Studio to access your local database
+4. Run the application locally via Visual Studio
