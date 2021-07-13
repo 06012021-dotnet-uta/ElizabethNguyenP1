@@ -13,16 +13,16 @@ This is a ASP.NET Core MVC project utilizing Entity Framework Core to create a W
 
 ## Features
 
-Create and store user accounts
-Validate user Logins
-Create orders of various products
-Multi-conditional user sorting
-Product filtering by category
+* Provides Sign up, Login, and Purchasing functionality 
+* Allows users to dynamically browse products, view location inventories, and edit current order information
+* Implements inventory cards to populate products with actual images
+* Issues closable warning labels for potentially dangerous actions such changing locations with items still in cart
+* Provides order history information by user purchases or by location purchases
 
 To-do list:
-Provide additional order history information such as items purchased.
-Encrypt passwords within the database.
-Provide Unit Tests to test functionality
+* Provide additional order history information such as items purchased.
+* Encrypt passwords within the database.
+* Provide Unit Tests to test functionality
 
 ## Getting Started & Usage
 This application is currently hosted locally and will require a local database and Visual Studio to operate. 
