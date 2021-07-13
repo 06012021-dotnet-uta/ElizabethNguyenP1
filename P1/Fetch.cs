@@ -336,6 +336,19 @@ namespace P1
             List<Order> Orders = context.Orders.Where(row => row.CustomerId == customerID).ToList();
             return Orders;
         }
+
+        /*
+        /// <summary>
+        /// Returns Details of Order: Aggregates the product, product order, and order information
+        /// </summary>
+        /// <returns>List<DetailedOrder></returns>
+        public List<DetailedOrder> DetailsofOrder(Order order)
+        {
+            List<DetailedOrder> list = new List<DetailedOrder>();
+            return list;
+        }
+        */
+
     }
 }
 

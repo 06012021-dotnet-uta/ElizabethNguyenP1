@@ -175,3 +175,4 @@ C:\Users\lizng\Desktop\Revature\ElizabethNguyenP1\StoreApplication\obj\Debug\net
 C:\Users\lizng\Desktop\Revature\ElizabethNguyenP1\StoreApplication\obj\Debug\net5.0\Razor\Views\User\OrderHistory.cshtml.g.cs
 C:\Users\lizng\Desktop\Revature\ElizabethNguyenP1\StoreApplication\obj\Debug\net5.0\Razor\Views\Location\OrderHistory.cshtml.g.cs
 C:\Users\lizng\Desktop\Revature\ElizabethNguyenP1\StoreApplication\obj\Debug\net5.0\Razor\Views\User\Search.cshtml.g.cs
+C:\Users\lizng\Desktop\Revature\ElizabethNguyenP1\StoreApplication\obj\Debug\net5.0\Razor\Views\Hidden\Index1.cshtml.g.cs

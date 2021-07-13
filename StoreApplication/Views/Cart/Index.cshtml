@@ -4,7 +4,7 @@
 }
 
 <h2 style="text-align:center">Your Cart: $@{@ViewBag.TotalCost}</h2>
-<a class="dropdown-item" asp-area="" asp-controller="Cart" asp-action="CheckOut"><button type="button" class="btn btn-danger">CheckOut</button></a>
+<a class="dropdown-item" asp-area="" asp-controller="Cart" asp-action="CheckOut" ><button type="button" class="btn btn-danger">CheckOut</button></a>
 
 <div class="row display: flex justify-content-center">
     @foreach (P1.DetailedProductInventory item in Model)
